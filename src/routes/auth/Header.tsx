@@ -4,8 +4,8 @@ import { useContent } from "@builder.io/qwik-city";
 import Logo from "~/components/common/Logo";
 import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
-import IconChevronDown from "../icons/IconChevronDown";
-import DrawerAuth from "./auth/DrawerAuth";
+import IconChevronDown from "../../components/icons/IconChevronDown";
+import DrawerAuth from "./DrawerAuth";
 
 export default component$(() => {
 
@@ -109,10 +109,16 @@ export default component$(() => {
         <div
           class="fixed inset-0 z-30 bg-black opacity-50"
           onClick$={() => (store.isDrawerOpen = false)}
+          
         ></div>
       )}
       {/* Drawer */}
-      <DrawerAuth onClose$={() => store.isDrawerOpen = false} isDrawerOpen$={store.isDrawerOpen} />
+      <DrawerAuth
+        onClose$={() => store.isDrawerOpen = false}
+        isDrawerOpen={store.isDrawerOpen}
+        // isDrawerOpen$={$(true)}
+
+        />
     </>
   );
 });

@@ -30,10 +30,12 @@
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.0.20",
+    "@modular-forms/qwik": "^0.28.2",
     "@unpic/qwik": "^0.0.46",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
     "node-fetch": "3.3.2",
+    "sweetalert2": "^11.14.5",
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
